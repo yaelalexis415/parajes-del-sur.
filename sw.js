@@ -1,4 +1,4 @@
-const CACHE = 'parajes-del-sur-v2-pwa';
+const CACHE = 'parajes-del-sur-v2-1-pwa';
 const FILES = ['./', './index.html', './plano.png', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)));
