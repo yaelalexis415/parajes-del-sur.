@@ -5,12 +5,6 @@
 </style></head><body><header><button class="iconbtn" id="menuBtn" aria-label="Buscar territorios">☰</button><div class="headtxt"><h1>Parajes del Sur</h1><p>201 territorios · Ciudad Juárez, Chihuahua</p></div></header>
 <main class="wrap">
 <section class="panel map-panel"><div class="map-title">Plano de Parajes del Sur</div><div class="maptools"><button type="button" id="touchToggle" class="secondary">◎ Activar zonas táctiles</button><button type="button" id="zoomOut" class="secondary" aria-label="Alejar">−</button><button type="button" id="zoomIn" class="secondary" aria-label="Acercar">＋</button><button type="button" id="zoomReset" class="secondary">Ajustar</button><button type="button" id="fullMap" class="secondary">⛶ Pantalla completa</button></div><div class="mapwrap" id="mapwrap"><div class="mapstage" id="mapstage"><img id="map" src="plano.png" alt="Plano de Parajes del Sur"><svg id="hotspots" viewBox="0 0 2048 1582" preserveAspectRatio="none" aria-label="Zonas táctiles de prueba">
-<polygon class="hotspot" data-key="1A" points="43,108 351,108 351,130 43,130"/>
-<polygon class="hotspot" data-key="1B" points="41,148 148,148 148,170 65,170 65,239 41,239"/>
-<polygon class="hotspot" data-key="1C" points="168,144 309,144 309,170 168,170"/>
-<polygon class="hotspot" data-key="1D" points="165,190 348,190 348,217 165,217"/>
-<polygon class="hotspot" data-key="2A" points="328,140 365,140 365,430 328,430"/>
-<polygon class="hotspot" data-key="2B" points="350,108 568,108 568,145 350,145"/>
 </svg></div></div><p class="hint" id="mapHint">Activa «Zonas táctiles» para probar las zonas calibradas. Usa + y − para ampliar como en un PDF; en el teléfono también puedes deslizar el plano ampliado.</p></section>
 <section class="panel"><b id="detailTitle">Selecciona un territorio</b><p class="hint" id="detailHint">Toca una de las zonas habilitadas del plano o abre el menú ☰ para buscarlo.</p><div id="detailActions"></div></section>
 <section class="panel"><b>Respaldo de notas</b><p class="hint">Exporta tus notas para conservarlas o pasarlas a otro teléfono.</p><div class="row"><button id="export">Exportar respaldo</button><label class="btn secondary">Importar respaldo<input id="import" type="file" accept="application/json" hidden></label></div><div class="status" id="status"></div></section>
