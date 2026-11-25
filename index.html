@@ -1,11 +1,78 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#174d70"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><title>Parajes del Sur — Catálogo 2.5</title><style>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#174d70"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><title>Parajes del Sur — Catálogo 2.7 · prueba de zonas</title><style>
 :root{font-family:system-ui,-apple-system,sans-serif;color:#172b3a;background:#f4f7fa}*{box-sizing:border-box}body{margin:0}header{position:sticky;top:0;z-index:30;background:#174d70;color:white;padding:10px 12px;display:flex;align-items:center;gap:10px;box-shadow:0 2px 8px #0002}h1{font-size:1.05rem;margin:0}header p{margin:2px 0 0;font-size:.78rem}.headtxt{flex:1}.iconbtn{width:44px;height:44px;border:0;border-radius:50%;background:#fff;color:#174d70;font-size:1.55rem;display:grid;place-items:center;padding:0}.wrap{padding:8px 10px 90px;max-width:950px;margin:auto}.panel{background:white;border-radius:14px;padding:10px;margin:8px 0;box-shadow:0 2px 10px #1231}input,textarea,button,select{font:inherit}input,textarea,select{width:100%;padding:12px;border:1px solid #b8c7d1;border-radius:10px;margin:6px 0}button,.btn{border:0;border-radius:10px;padding:11px 13px;background:#175d88;color:white;font-weight:600;cursor:pointer}.secondary{background:#e7f0f6;color:#174d70}.map-panel{padding:7px}.map-title{font-size:.9rem;font-weight:700;margin:3px 4px 7px}.mapwrap{position:relative;touch-action:pan-y;line-height:0}.mapwrap img{width:100%;height:auto;display:block;border-radius:8px;user-select:none;-webkit-user-drag:none}#hotspots{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}.hotspot{fill:#ffdf00;fill-opacity:0;stroke:transparent;stroke-width:5;pointer-events:all;cursor:pointer;touch-action:manipulation}.hotspot:active{fill:#20a05a;fill-opacity:.24;stroke:#174d70;stroke-opacity:.9}.list{display:grid;gap:8px}.territory{display:grid;grid-template-columns:58px 1fr;gap:8px;text-align:left;width:100%;background:#f0f6fa;color:#16394e;border:1px solid #d7e2e9}.territory strong{font-size:1.1rem}.territory small{display:block;font-weight:400;color:#4b6575}.territory .actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.territory .maplink{display:inline-block;text-decoration:none;background:#175d88;color:white;border-radius:8px;padding:8px 10px;font-weight:600;font-size:.88rem}.territory .notebtn{padding:8px 10px;font-size:.88rem}.hide{display:none!important}.hint{font-size:.84rem;color:#4e6472}.status{font-size:.85rem;color:#26734b;min-height:1.2em}.fab{position:fixed;right:17px;bottom:20px;z-index:40;width:60px;height:60px;border-radius:50%;font-size:2rem;padding:0;box-shadow:0 4px 14px #0004}.drawer{position:fixed;inset:0;z-index:50;background:#0006;display:none}.drawer.open{display:block}.drawerbox{position:absolute;right:0;top:0;bottom:0;width:min(90vw,420px);overflow:auto;background:#f4f7fa;padding:12px;box-shadow:-4px 0 16px #0003}.drawerhead{display:flex;align-items:center;justify-content:space-between;gap:10px}.drawerhead h2{font-size:1.1rem}.note-modal{position:fixed;inset:0;z-index:60;background:#0007;display:none;align-items:flex-end;justify-content:center}.note-modal.open{display:flex}.note-box{background:white;width:100%;max-width:650px;border-radius:18px 18px 0 0;padding:18px;max-height:85vh;overflow:auto}.note-box h2{margin:0 0 8px}.row{display:flex;gap:8px;flex-wrap:wrap}.row button{flex:1}.empty{padding:12px;color:#526777}
 
 .maptools{display:flex;gap:6px;flex-wrap:wrap;margin:6px 3px 10px}.maptools button{padding:9px 11px;font-size:.88rem}.mapwrap{overflow:auto;max-height:72vh;border-radius:8px;touch-action:pan-x pan-y}.mapstage{position:relative;width:100%;min-width:100%;line-height:0}.mapstage img{width:100%;height:auto;display:block}.mapstage svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.mapstage.touch-on .hotspot{pointer-events:all;stroke:#174d70;stroke-opacity:.9;stroke-width:4;fill:#ffd400;fill-opacity:.08}.mapstage.touch-on .hotspot:active{fill:#20a05a;fill-opacity:.35}.mapwrap:fullscreen{background:#fff;max-height:none;padding:12px}.mapwrap:fullscreen .mapstage{width:min(100%,1600px);margin:auto}.maptools button.active{background:#175d88;color:#fff}
 </style></head><body><header><button class="iconbtn" id="menuBtn" aria-label="Buscar territorios">☰</button><div class="headtxt"><h1>Parajes del Sur</h1><p>201 territorios · Ciudad Juárez, Chihuahua</p></div></header>
 <main class="wrap">
-<section class="panel map-panel"><div class="map-title">Plano de Parajes del Sur</div><div class="maptools"><button type="button" id="touchToggle" class="secondary">◎ Activar zonas táctiles</button><button type="button" id="zoomOut" class="secondary" aria-label="Alejar">−</button><button type="button" id="zoomIn" class="secondary" aria-label="Acercar">＋</button><button type="button" id="zoomReset" class="secondary">Ajustar</button><button type="button" id="fullMap" class="secondary">⛶ Pantalla completa</button></div><div class="mapwrap" id="mapwrap"><div class="mapstage" id="mapstage"><img id="map" src="plano.png" alt="Plano de Parajes del Sur"><svg id="hotspots" viewBox="0 0 2048 1582" preserveAspectRatio="none" aria-label="Zonas táctiles de prueba">
-</svg></div></div><p class="hint" id="mapHint">Activa «Zonas táctiles» para probar las zonas calibradas. Usa + y − para ampliar como en un PDF; en el teléfono también puedes deslizar el plano ampliado.</p></section>
+<section class="panel map-panel"><div class="map-title">Plano de Parajes del Sur</div><div class="maptools"><button type="button" id="touchToggle" class="secondary">◎ Activar zonas táctiles</button><button type="button" id="zoomOut" class="secondary" aria-label="Alejar">−</button><button type="button" id="zoomIn" class="secondary" aria-label="Acercar">＋</button><button type="button" id="zoomReset" class="secondary">Ajustar</button><button type="button" id="fullMap" class="secondary">⛶ Pantalla completa</button></div><div class="mapwrap" id="mapwrap"><div class="mapstage" id="mapstage"><img id="map" src="plano.png" alt="Plano de Parajes del Sur"><svg id="hotspots" viewBox="0 0 2048 1582" preserveAspectRatio="none" aria-label="Zonas táctiles">
+<polygon class="hotspot" data-key="2C" points="396,152 396,181 532,181 532,151" aria-label="Territorio 2C" />
+<polygon class="hotspot" data-key="10A" points="1662,162 1662,189 1861,189 1861,162" aria-label="Territorio 10A" />
+<polygon class="hotspot" data-key="6F" points="661,152 662,201 803,201 803,152" aria-label="Territorio 6F" />
+<polygon class="hotspot" data-key="7A" points="850,162 850,197 1147,197 1147,162" aria-label="Territorio 7A" />
+<polygon class="hotspot" data-key="8A" points="1173,161 1173,192 1397,192 1397,161" aria-label="Territorio 8A" />
+<polygon class="hotspot" data-key="6E" points="663,208 663,252 806,252 806,208" aria-label="Territorio 6E" />
+<polygon class="hotspot" data-key="7B" points="851,215 851,242 989,242 989,215" aria-label="Territorio 7B" />
+<polygon class="hotspot" data-key="7L" points="1003,215 1003,245 1150,245 1150,215" aria-label="Territorio 7L" />
+<polygon class="hotspot" data-key="8B" points="1175,213 1175,244 1363,244 1363,213" aria-label="Territorio 8B" />
+<polygon class="hotspot" data-key="9H" points="1425,214 1425,243 1602,243 1601,213" aria-label="Territorio 9H" />
+<polygon class="hotspot" data-key="10B" points="1658,213 1658,247 1840,247 1840,213" aria-label="Territorio 10B" />
+<polygon class="hotspot" data-key="7C" points="869,266 869,296 988,296 988,266" aria-label="Territorio 7C" />
+<polygon class="hotspot" data-key="7K" points="1003,265 1003,295 1147,295 1147,264" aria-label="Territorio 7K" />
+<polygon class="hotspot" data-key="6D" points="606,258 606,305 807,305 807,258" aria-label="Territorio 6D" />
+<polygon class="hotspot" data-key="8C" points="1173,266 1173,299 1364,299 1365,272 1362,265" aria-label="Territorio 8C" />
+<polygon class="hotspot" data-key="10C" points="1666,262 1666,295 1832,295 1832,262" aria-label="Territorio 10C" />
+<polygon class="hotspot" data-key="7D" points="849,313 849,344 984,344 984,313" aria-label="Territorio 7D" />
+<polygon class="hotspot" data-key="7J" points="1007,315 1007,344 1146,344 1146,315" aria-label="Territorio 7J" />
+<polygon class="hotspot" data-key="8D" points="1175,315 1175,341 1366,341 1366,315" aria-label="Territorio 8D" />
+<polygon class="hotspot" data-key="10D" points="1662,310 1662,345 1835,345 1835,310" aria-label="Territorio 10D" />
+<polygon class="hotspot" data-key="32C" points="45,323 45,352 153,352 153,323" aria-label="Territorio 32C" />
+<polygon class="hotspot" data-key="6C" points="596,313 596,357 807,357 807,313" aria-label="Territorio 6C" />
+<polygon class="hotspot" data-key="8E" points="1173,361 1173,397 1364,397 1364,361" aria-label="Territorio 8E" />
+<polygon class="hotspot" data-key="10E" points="1669,359 1669,393 1831,393 1831,359" aria-label="Territorio 10E" />
+<polygon class="hotspot" data-key="32B" points="45,370 45,400 154,400 154,370" aria-label="Territorio 32B" />
+<polygon class="hotspot" data-key="7E" points="849,365 849,402 985,402 984,365" aria-label="Territorio 7E" />
+<polygon class="hotspot" data-key="7H" points="1007,415 1007,445 1153,445 1153,415" aria-label="Territorio 7H" />
+<polygon class="hotspot" data-key="8F" points="1172,410 1172,445 1364,445 1364,410" aria-label="Territorio 8F" />
+<polygon class="hotspot" data-key="10F" points="1661,410 1661,444 1831,444 1831,410" aria-label="Territorio 10F" />
+<polygon class="hotspot" data-key="32A" points="203,326 174,328 173,419 46,419 44,449 202,450" aria-label="Territorio 32A" />
+<polygon class="hotspot" data-key="73F" points="853,416 853,449 995,449 995,416" aria-label="Territorio 73F" />
+<polygon class="hotspot" data-key="8G" points="1242,461 1242,500 1368,500 1368,461" aria-label="Territorio 8G" />
+<polygon class="hotspot" data-key="10G" points="1666,459 1666,491 1837,491 1837,459" aria-label="Territorio 10G" />
+<polygon class="hotspot" data-key="10H" points="1661,508 1661,540 1840,540 1840,508" aria-label="Territorio 10H" />
+<polygon class="hotspot" data-key="17A" points="976,542 976,574 1104,574 1104,542" aria-label="Territorio 17A" />
+<polygon class="hotspot" data-key="17B" points="1003,588 1004,620 1088,620 1088,588" aria-label="Territorio 17B" />
+<polygon class="hotspot" data-key="30D" points="64,649 65,682 158,682 158,649" aria-label="Territorio 30D" />
+<polygon class="hotspot" data-key="29D" points="184,649 184,682 257,682 257,649" aria-label="Territorio 29D" />
+<polygon class="hotspot" data-key="16F" points="1174,640 1174,675 1368,675 1368,640" aria-label="Territorio 16F" />
+<polygon class="hotspot" data-key="30C" points="43,698 43,735 160,735 161,724 163,721 160,698" aria-label="Territorio 30C" />
+<polygon class="hotspot" data-key="29C" points="179,698 179,733 281,733 281,697" aria-label="Territorio 29C" />
+<polygon class="hotspot" data-key="17D" points="986,697 986,726 1152,726 1152,697" aria-label="Territorio 17D" />
+<polygon class="hotspot" data-key="16E" points="1175,692 1175,727 1309,727 1309,692" aria-label="Territorio 16E" />
+<polygon class="hotspot" data-key="30B" points="41,746 41,782 159,782 159,746" aria-label="Territorio 30B" />
+<polygon class="hotspot" data-key="29B" points="184,748 184,781 296,781 296,748" aria-label="Territorio 29B" />
+<polygon class="hotspot" data-key="17E" points="982,756 982,787 1153,787 1153,756" aria-label="Territorio 17E" />
+<polygon class="hotspot" data-key="30A" points="40,797 40,830 165,830 165,797" aria-label="Territorio 30A" />
+<polygon class="hotspot" data-key="29A" points="175,800 175,831 315,831 315,800" aria-label="Territorio 29A" />
+<polygon class="hotspot" data-key="16C" points="1365,805 1178,805 1178,836 1364,836" aria-label="Territorio 16C" />
+<polygon class="hotspot" data-key="23A" points="413,845 413,880 579,880 579,845" aria-label="Territorio 23A" />
+<polygon class="hotspot" data-key="17G" points="1006,854 1006,892 1148,892 1148,854" aria-label="Territorio 17G" />
+<polygon class="hotspot" data-key="16B" points="1176,856 1176,885 1372,885 1372,856" aria-label="Territorio 16B" />
+<polygon class="hotspot" data-key="23B" points="401,895 401,926 556,926 556,895" aria-label="Territorio 23B" />
+<polygon class="hotspot" data-key="16A" points="1175,897 1175,923 1373,922 1372,897" aria-label="Territorio 16A" />
+<polygon class="hotspot" data-key="18A" points="992,914 992,944 1149,944 1149,914" aria-label="Territorio 18A" />
+<polygon class="hotspot" data-key="23C" points="388,943 388,978 580,978 580,943" aria-label="Territorio 23C" />
+<polygon class="hotspot" data-key="23D" points="398,997 398,1029 559,1029 559,997" aria-label="Territorio 23D" />
+<polygon class="hotspot" data-key="23E" points="578,1046 390,1046 390,1078 578,1078" aria-label="Territorio 23E" />
+<polygon class="hotspot" data-key="26F" points="50,1144 50,1180 156,1180 156,1144" aria-label="Territorio 26F" />
+<polygon class="hotspot" data-key="25A" points="187,1143 187,1186 347,1186 347,1142" aria-label="Territorio 25A" />
+<polygon class="hotspot" data-key="26E" points="33,1196 33,1233 165,1233 165,1196" aria-label="Territorio 26E" />
+<polygon class="hotspot" data-key="25B" points="337,1200 207,1200 207,1235 337,1235" aria-label="Territorio 25B" />
+<polygon class="hotspot" data-key="26D" points="38,1251 38,1288 209,1288 209,1250" aria-label="Territorio 26D" />
+<polygon class="hotspot" data-key="25C" points="253,1256 253,1296 384,1296 384,1256" aria-label="Territorio 25C" />
+<polygon class="hotspot" data-key="26C" points="36,1305 37,1338 216,1338 216,1300 37,1300" aria-label="Territorio 26C" />
+<polygon class="hotspot" data-key="26A" points="39,1398 39,1426 236,1426 236,1398" aria-label="Territorio 26A" />
+<polygon class="hotspot" data-key="20B" points="817,1401 817,1433 915,1433 915,1401" aria-label="Territorio 20B" />
+</svg></div></div><p class="hint" id="mapHint">Prueba preliminar: 67 zonas detectadas y asociadas automáticamente. Las demás claves aún no están habilitadas; verifica antes de usar como navegación definitiva.</p></section>
 <section class="panel"><b id="detailTitle">Selecciona un territorio</b><p class="hint" id="detailHint">Toca una de las zonas habilitadas del plano o abre el menú ☰ para buscarlo.</p><div id="detailActions"></div></section>
 <section class="panel"><b>Respaldo de notas</b><p class="hint">Exporta tus notas para conservarlas o pasarlas a otro teléfono.</p><div class="row"><button id="export">Exportar respaldo</button><label class="btn secondary">Importar respaldo<input id="import" type="file" accept="application/json" hidden></label></div><div class="status" id="status"></div></section>
 </main>
@@ -20,7 +87,7 @@ function render(q=''){let a=DATA.filter(d=>(d.key+' '+d.street).toLowerCase().in
 function select(k){selected=DATA.find(d=>d.key===k);if(!selected)return;$('detailTitle').textContent='Territorio '+k;$('detailHint').textContent='Calle: '+selected.street;$('detailActions').innerHTML=`<a class="btn" href="${maps(selected)}" target="_blank" rel="noopener">Abrir ubicación en Google Maps</a>`}
 function openNote(k=''){ $('noteTerritory').value=k;$('noteText').value=k?(state.notes[k]||''):'';$('noteStatus').textContent='';$('noteModal').classList.add('open');if(k)select(k)}
 $('q').oninput=e=>render(e.target.value);$('menuBtn').onclick=()=>{$('drawer').classList.add('open');$('q').focus()};$('closeMenu').onclick=()=>$('drawer').classList.remove('open');$('drawer').addEventListener('click',e=>{if(e.target===$('drawer'))$('drawer').classList.remove('open')});$('addNote').onclick=()=>openNote(selected?.key||'');$('closeNote').onclick=()=> $('noteModal').classList.remove('open');$('noteModal').addEventListener('click',e=>{if(e.target===$('noteModal'))$('noteModal').classList.remove('open')});$('saveNote').onclick=()=>{let k=$('noteTerritory').value.trim().toUpperCase(),d=DATA.find(x=>x.key===k);if(!d){$('noteStatus').textContent='Escribe una clave válida, por ejemplo 1A.';return}state.notes[k]=$('noteText').value.trim();persist();$('noteStatus').textContent='Nota guardada para '+k+'.';select(k);render($('q').value)};
-document.querySelectorAll('.hotspot').forEach(h=>h.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();const d=DATA.find(x=>x.key===h.dataset.key);if(d){select(d.key);window.location.href=maps(d)}}));
+document.querySelectorAll('.hotspot').forEach(h=>h.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();const d=DATA.find(x=>x.key===h.dataset.key);if(d){select(d.key);document.getElementById('detailTitle').scrollIntoView({behavior:'smooth',block:'nearest'})}}));
 $('export').onclick=()=>{let blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='respaldo_parajes_sur.json';a.click();URL.revokeObjectURL(a.href)};$('import').onchange=async e=>{try{let v=JSON.parse(await e.target.files[0].text());if(!v.notes||!Array.isArray(v.pins))throw Error();state=v;persist();render($('q').value);$('noteStatus').textContent='Respaldo importado.'}catch(err){$('status').textContent='No se pudo leer ese respaldo.'}};
 $('territoryOptions').innerHTML=DATA.map(d=>`<option value="${d.key}">${esc(d.street)}</option>`).join('');
 let zoomLevel=1;const stage=$('mapstage'),wrap=$('mapwrap'),touchBtn=$('touchToggle');
