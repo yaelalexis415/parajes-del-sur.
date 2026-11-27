@@ -1,212 +1,211 @@
 <!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#174d70"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><title>Parajes del Sur — Catálogo 2.7 · prueba de zonas</title><style>
 :root{font-family:system-ui,-apple-system,sans-serif;color:#172b3a;background:#f4f7fa}*{box-sizing:border-box}body{margin:0}header{position:sticky;top:0;z-index:30;background:#174d70;color:white;padding:10px 12px;display:flex;align-items:center;gap:10px;box-shadow:0 2px 8px #0002}h1{font-size:1.05rem;margin:0}header p{margin:2px 0 0;font-size:.78rem}.headtxt{flex:1}.iconbtn{width:44px;height:44px;border:0;border-radius:50%;background:#fff;color:#174d70;font-size:1.55rem;display:grid;place-items:center;padding:0}.wrap{padding:8px 10px 90px;max-width:950px;margin:auto}.panel{background:white;border-radius:14px;padding:10px;margin:8px 0;box-shadow:0 2px 10px #1231}input,textarea,button,select{font:inherit}input,textarea,select{width:100%;padding:12px;border:1px solid #b8c7d1;border-radius:10px;margin:6px 0}button,.btn{border:0;border-radius:10px;padding:11px 13px;background:#175d88;color:white;font-weight:600;cursor:pointer}.secondary{background:#e7f0f6;color:#174d70}.map-panel{padding:7px}.map-title{font-size:.9rem;font-weight:700;margin:3px 4px 7px}.mapwrap{position:relative;touch-action:pan-y;line-height:0}.mapwrap img{width:100%;height:auto;display:block;border-radius:8px;user-select:none;-webkit-user-drag:none}#hotspots{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}.hotspot{fill:#ffdf00;fill-opacity:0;stroke:transparent;stroke-width:5;pointer-events:all;cursor:pointer;touch-action:manipulation}.hotspot:active{fill:#20a05a;fill-opacity:.24;stroke:#174d70;stroke-opacity:.9}.list{display:grid;gap:8px}.territory{display:grid;grid-template-columns:58px 1fr;gap:8px;text-align:left;width:100%;background:#f0f6fa;color:#16394e;border:1px solid #d7e2e9}.territory strong{font-size:1.1rem}.territory small{display:block;font-weight:400;color:#4b6575}.territory .actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.territory .maplink{display:inline-block;text-decoration:none;background:#175d88;color:white;border-radius:8px;padding:8px 10px;font-weight:600;font-size:.88rem}.territory .notebtn{padding:8px 10px;font-size:.88rem}.hide{display:none!important}.hint{font-size:.84rem;color:#4e6472}.status{font-size:.85rem;color:#26734b;min-height:1.2em}.fab{position:fixed;right:17px;bottom:20px;z-index:40;width:60px;height:60px;border-radius:50%;font-size:2rem;padding:0;box-shadow:0 4px 14px #0004}.drawer{position:fixed;inset:0;z-index:50;background:#0006;display:none}.drawer.open{display:block}.drawerbox{position:absolute;right:0;top:0;bottom:0;width:min(90vw,420px);overflow:auto;background:#f4f7fa;padding:12px;box-shadow:-4px 0 16px #0003}.drawerhead{display:flex;align-items:center;justify-content:space-between;gap:10px}.drawerhead h2{font-size:1.1rem}.note-modal{position:fixed;inset:0;z-index:60;background:#0007;display:none;align-items:flex-end;justify-content:center}.note-modal.open{display:flex}.note-box{background:white;width:100%;max-width:650px;border-radius:18px 18px 0 0;padding:18px;max-height:85vh;overflow:auto}.note-box h2{margin:0 0 8px}.row{display:flex;gap:8px;flex-wrap:wrap}.row button{flex:1}.empty{padding:12px;color:#526777}
 
-.maptools{position:sticky;top:64px;z-index:8;display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 10px;padding:7px 3px;background:#fff;border-radius:10px;box-shadow:0 2px 8px #1232}.maptools button{padding:9px 11px;font-size:.88rem;min-height:40px}.mapwrap{position:relative;overflow:auto;max-height:72vh;border-radius:8px;touch-action:none;overscroll-behavior:contain;cursor:grab;-webkit-overflow-scrolling:touch}.mapwrap:active{cursor:grabbing}.mapstage{position:relative;width:100%;min-width:100%;line-height:0;user-select:none;-webkit-user-select:none;touch-action:none}.mapstage img{width:100%;height:auto;display:block;pointer-events:none}.mapstage svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.mapstage .hotspot{pointer-events:none}.mapstage.touch-on svg{pointer-events:auto}.mapstage.touch-on .hotspot{pointer-events:visiblePainted;stroke:#174d70;stroke-opacity:.9;stroke-width:4;fill:#ffd400;fill-opacity:.12}.mapstage.touch-on .hotspot:active{fill:#20a05a;fill-opacity:.35}.mapwrap:fullscreen{background:#fff;max-height:none;padding:12px}.mapwrap:fullscreen .mapstage{width:min(100%,1600px);margin:auto}.maptools button.active{background:#175d88;color:#fff}@media(max-width:520px){.maptools{top:58px}.maptools button{flex:1 1 auto;padding:9px 8px;font-size:.82rem}}</style></head><body><header><button class="iconbtn" id="menuBtn" aria-label="Buscar territorios">☰</button><div class="headtxt"><h1>Parajes del Sur</h1><p>201 territorios · Ciudad Juárez, Chihuahua</p></div></header>
+.maptools{position:sticky;top:64px;z-index:8;display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 10px;padding:7px 3px;background:#fff;border-radius:10px;box-shadow:0 2px 8px #1232}.maptools button{padding:9px 11px;font-size:.88rem;min-height:40px}.mapwrap{position:relative;overflow:auto;max-height:72vh;border-radius:8px;touch-action:none;overscroll-behavior:contain;cursor:grab;-webkit-overflow-scrolling:touch}.mapwrap:active{cursor:grabbing}.mapstage{position:relative;width:100%;min-width:100%;line-height:0;user-select:none;-webkit-user-select:none;touch-action:none}.mapstage img{width:100%;height:auto;display:block;pointer-events:none}.mapstage svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.mapstage .hotspot{pointer-events:none}.mapstage.touch-on svg{pointer-events:auto}.mapstage.touch-on .hotspot{pointer-events:all;stroke:transparent;stroke-width:0;fill:#ffd400;fill-opacity:0}.mapstage.touch-on .hotspot:active{fill:#20a05a;fill-opacity:.28;stroke:transparent}.mapwrap:fullscreen{background:#fff;max-height:none;padding:12px}.mapwrap:fullscreen .mapstage{width:min(100%,1600px);margin:auto}.maptools button.active{background:#175d88;color:#fff}@media(max-width:520px){.maptools{top:58px}.maptools button{flex:1 1 auto;padding:9px 8px;font-size:.82rem}}</style></head><body><header><button class="iconbtn" id="menuBtn" aria-label="Buscar territorios">☰</button><div class="headtxt"><h1>Parajes del Sur</h1><p>201 territorios · Ciudad Juárez, Chihuahua</p></div></header>
 <main class="wrap">
-<section class="panel map-panel"><div class="map-title">Plano de Parajes del Sur</div><div class="maptools"><button type="button" id="touchToggle" class="secondary">◎ Activar zonas táctiles</button><button type="button" id="zoomOut" class="secondary" aria-label="Alejar">−</button><button type="button" id="zoomIn" class="secondary" aria-label="Acercar">＋</button><button type="button" id="zoomReset" class="secondary">Ajustar</button><button type="button" id="fullMap" class="secondary">⛶ Pantalla completa</button></div><div class="mapwrap" id="mapwrap"><div class="mapstage" id="mapstage"><img id="map" src="plano.png" alt="Plano de Parajes del Sur"><svg id="hotspots" viewBox="0 0 2048 1582" preserveAspectRatio="none" aria-label="Zonas táctiles">
-<polygon class="hotspot" data-key="2C" points="396,152 396,181 532,181 532,151" aria-label="Territorio 2C" />
-<polygon class="hotspot" data-key="10A" points="1662,162 1662,189 1861,189 1861,162" aria-label="Territorio 10A" />
-<polygon class="hotspot" data-key="6F" points="661,152 662,201 803,201 803,152" aria-label="Territorio 6F" />
-<polygon class="hotspot" data-key="7A" points="850,162 850,197 1147,197 1147,162" aria-label="Territorio 7A" />
-<polygon class="hotspot" data-key="8A" points="1173,161 1173,192 1397,192 1397,161" aria-label="Territorio 8A" />
-<polygon class="hotspot" data-key="6E" points="663,208 663,252 806,252 806,208" aria-label="Territorio 6E" />
-<polygon class="hotspot" data-key="7B" points="851,215 851,242 989,242 989,215" aria-label="Territorio 7B" />
-<polygon class="hotspot" data-key="7L" points="1003,215 1003,245 1150,245 1150,215" aria-label="Territorio 7L" />
-<polygon class="hotspot" data-key="8B" points="1175,213 1175,244 1363,244 1363,213" aria-label="Territorio 8B" />
-<polygon class="hotspot" data-key="9H" points="1425,214 1425,243 1602,243 1601,213" aria-label="Territorio 9H" />
-<polygon class="hotspot" data-key="10B" points="1658,213 1658,247 1840,247 1840,213" aria-label="Territorio 10B" />
-<polygon class="hotspot" data-key="7C" points="869,266 869,296 988,296 988,266" aria-label="Territorio 7C" />
-<polygon class="hotspot" data-key="7K" points="1003,265 1003,295 1147,295 1147,264" aria-label="Territorio 7K" />
-<polygon class="hotspot" data-key="6D" points="606,258 606,305 807,305 807,258" aria-label="Territorio 6D" />
-<polygon class="hotspot" data-key="8C" points="1173,266 1173,299 1364,299 1365,272 1362,265" aria-label="Territorio 8C" />
-<polygon class="hotspot" data-key="10C" points="1666,262 1666,295 1832,295 1832,262" aria-label="Territorio 10C" />
-<polygon class="hotspot" data-key="7D" points="849,313 849,344 984,344 984,313" aria-label="Territorio 7D" />
-<polygon class="hotspot" data-key="7J" points="1007,315 1007,344 1146,344 1146,315" aria-label="Territorio 7J" />
-<polygon class="hotspot" data-key="8D" points="1175,315 1175,341 1366,341 1366,315" aria-label="Territorio 8D" />
-<polygon class="hotspot" data-key="10D" points="1662,310 1662,345 1835,345 1835,310" aria-label="Territorio 10D" />
-<polygon class="hotspot" data-key="32C" points="45,323 45,352 153,352 153,323" aria-label="Territorio 32C" />
+<section class="panel map-panel"><div class="map-title">Plano de Parajes del Sur</div><div class="maptools"><button type="button" id="touchToggle" class="secondary">◎ Activar zonas táctiles</button><button type="button" id="zoomOut" class="secondary" aria-label="Alejar">−</button><button type="button" id="zoomIn" class="secondary" aria-label="Acercar">＋</button><button type="button" id="zoomReset" class="secondary">Ajustar</button><button type="button" id="fullMap" class="secondary">⛶ Pantalla completa</button></div><div class="mapwrap" id="mapwrap"><div class="mapstage" id="mapstage"><img id="map" src="plano.png?v=final-201" alt="Plano de Parajes del Sur"><svg id="hotspots" viewBox="0 0 2048 1582" preserveAspectRatio="none" aria-label="Zonas táctiles de los 201 territorios">
+<polygon class="hotspot" data-key="1A" points="41,111 41,135 363,135 363,111" aria-label="Territorio 1A" />
+<polygon class="hotspot" data-key="1B" points="41,152 41,179 123,179 124,245 125,247 154,248 153,151" aria-label="Territorio 1B" />
+<polygon class="hotspot" data-key="1C" points="197,148 197,179 322,179 322,148" aria-label="Territorio 1C" />
+<polygon class="hotspot" data-key="1D" points="170,197 170,225 172,227 358,228 359,340 380,340 380,147 359,147 358,143 338,144 337,195" aria-label="Territorio 1D" />
+<polygon class="hotspot" data-key="2B" points="590,213 590,110 588,111 587,210 564,209 565,135 370,134 371,113 586,113 586,111 369,111 367,114 368,138 561,137 562,209 560,211 562,213" aria-label="Territorio 2B" />
+<polygon class="hotspot" data-key="2C" points="397,151 397,181 532,181 532,151" aria-label="Territorio 2C" />
+<polygon class="hotspot" data-key="2D" points="551,213 525,217 509,223 489,233 485,233 463,249 460,249 452,258 438,269 436,273 411,298 400,317 395,321 383,343 402,356 405,360 414,341 430,315 442,300 445,299 465,278 468,280 493,260 502,257 505,258 540,246 552,245 553,216" aria-label="Territorio 2D" />
+<polygon class="hotspot" data-key="2E" points="581,267 526,275 501,282 485,290 475,297 457,315 426,360 423,361 423,365 428,366 436,373 444,376 466,343 485,322 499,312 516,304 582,287" aria-label="Territorio 2E" />
+<polygon class="hotspot" data-key="2F" points="580,318 578,317 576,320 529,328 512,334 502,341 488,356 465,389 469,389 487,404 509,372 520,361 535,353 577,341 578,345 580,345" aria-label="Territorio 2F" />
+<polygon class="hotspot" data-key="2G" points="579,365 550,370 530,377 519,388 507,409 507,413 510,413 526,427 527,430 530,429 530,424 538,407 547,398 579,387" aria-label="Territorio 2G" />
+<polygon class="hotspot" data-key="3A" points="431,395 418,403 306,491 323,514 448,417" aria-label="Territorio 3A" />
+<polygon class="hotspot" data-key="3B" points="476,438 474,437 472,439 455,427 419,473 396,494 361,513 322,528 320,527 321,562 322,563 324,559 379,538 402,527 417,517 442,491 474,443 478,443 475,440" aria-label="Territorio 3B" />
+<polygon class="hotspot" data-key="3C" points="519,461 502,452 501,448 499,450 495,449 497,452 472,487 447,518 426,539 386,565 328,594 327,588 325,587 325,598 328,610 326,614 329,621 331,621 330,615 332,613 355,607 412,587 437,574 450,564 461,553 478,531 507,484" aria-label="Territorio 3C" />
+<polygon class="hotspot" data-key="4A" points="531,500 517,522 571,557 586,534 537,502" aria-label="Territorio 4A" />
+<polygon class="hotspot" data-key="4B" points="501,537 487,559 566,611 573,614 587,593" aria-label="Territorio 4B" />
+<polygon class="hotspot" data-key="4C" points="460,581 464,585 465,590 480,618 497,638 507,644 526,651 581,663 581,636 577,637 524,617 502,596 485,570 475,573" aria-label="Territorio 4C" />
+<polygon class="hotspot" data-key="4D" points="434,598 414,614 465,682 468,682 487,667" aria-label="Territorio 4D" />
+<polygon class="hotspot" data-key="4E" points="389,614 368,630 447,740 468,725" aria-label="Territorio 4E" />
+<polygon class="hotspot" data-key="4F" points="349,636 326,653 399,752 401,757 413,771 435,754" aria-label="Territorio 4F" />
+<polygon class="hotspot" data-key="4G" points="476,728 471,758 580,776 585,746" aria-label="Territorio 4G" />
+<polygon class="hotspot" data-key="4H" points="498,682 494,705 579,721 583,699 582,697 515,685 501,681" aria-label="Territorio 4H" />
+<polygon class="hotspot" data-key="4I" points="441,796 443,799 576,830 581,806 447,774" aria-label="Territorio 4I" />
+<polygon class="hotspot" data-key="5A" points="759,650 745,653 729,660 607,702 617,731 769,678" aria-label="Territorio 5A" />
+<polygon class="hotspot" data-key="5B" points="818,743 805,724 802,724 744,766 712,783 693,789 663,794 608,797 609,817 606,823 610,824 625,821 665,818 697,813 719,807 746,795 764,784 818,745" aria-label="Territorio 5B" />
+<polygon class="hotspot" data-key="5C" points="793,702 777,686 735,709 734,711 694,729 662,737 610,745 607,744 606,769 677,767 705,761 722,753 741,741" aria-label="Territorio 5C" />
+<polygon class="hotspot" data-key="5D" points="736,613 610,637 614,660 741,636" aria-label="Territorio 5D" />
+<polygon class="hotspot" data-key="5E" points="714,565 605,583 610,613 625,612 719,595" aria-label="Territorio 5E" />
+<polygon class="hotspot" data-key="5F" points="671,530 604,535 606,561 672,556" aria-label="Territorio 5F" />
+<polygon class="hotspot" data-key="6A" points="806,420 804,419 804,414 795,415 794,420 672,420 672,457 806,457" aria-label="Territorio 6A" />
+<polygon class="hotspot" data-key="6B" points="600,365 599,409 806,409 806,365" aria-label="Territorio 6B" />
 <polygon class="hotspot" data-key="6C" points="596,313 596,357 807,357 807,313" aria-label="Territorio 6C" />
-<polygon class="hotspot" data-key="8E" points="1173,361 1173,397 1364,397 1364,361" aria-label="Territorio 8E" />
-<polygon class="hotspot" data-key="10E" points="1669,359 1669,393 1831,393 1831,359" aria-label="Territorio 10E" />
-<polygon class="hotspot" data-key="32B" points="45,370 45,400 154,400 154,370" aria-label="Territorio 32B" />
+<polygon class="hotspot" data-key="6D" points="606,258 606,305 807,305 807,258" aria-label="Territorio 6D" />
+<polygon class="hotspot" data-key="6E" points="663,208 663,252 806,252 806,208" aria-label="Territorio 6E" />
+<polygon class="hotspot" data-key="6F" points="662,152 662,201 803,201 803,152" aria-label="Territorio 6F" />
+<polygon class="hotspot" data-key="6G" points="612,243 645,244 645,144 642,143 643,140 872,144 871,114 613,114 612,116 611,112" aria-label="Territorio 6G" />
+<polygon class="hotspot" data-key="7A" points="850,162 850,197 1147,197 1147,162" aria-label="Territorio 7A" />
+<polygon class="hotspot" data-key="7B" points="851,215 851,242 989,242 989,215" aria-label="Territorio 7B" />
+<polygon class="hotspot" data-key="7C" points="869,266 869,296 988,296 988,266" aria-label="Territorio 7C" />
+<polygon class="hotspot" data-key="7D" points="849,313 849,343 984,343 984,313" aria-label="Territorio 7D" />
 <polygon class="hotspot" data-key="7E" points="849,365 849,402 985,402 984,365" aria-label="Territorio 7E" />
-<polygon class="hotspot" data-key="7H" points="1007,415 1007,445 1153,445 1153,415" aria-label="Territorio 7H" />
-<polygon class="hotspot" data-key="8F" points="1172,410 1172,445 1364,445 1364,410" aria-label="Territorio 8F" />
-<polygon class="hotspot" data-key="10F" points="1661,410 1661,444 1831,444 1831,410" aria-label="Territorio 10F" />
-<polygon class="hotspot" data-key="32A" points="203,326 174,328 173,419 46,419 44,449 202,450" aria-label="Territorio 32A" />
 <polygon class="hotspot" data-key="7F" points="853,416 853,449 995,449 995,416" aria-label="Territorio 7F" />
+<polygon class="hotspot" data-key="7G" points="846,461 846,489 1130,489 1130,461" aria-label="Territorio 7G" />
+<polygon class="hotspot" data-key="7H" points="1007,415 1007,445 1153,445 1153,415" aria-label="Territorio 7H" />
+<polygon class="hotspot" data-key="7I" points="1008,367 1008,397 1148,397 1148,367" aria-label="Territorio 7I" />
+<polygon class="hotspot" data-key="7J" points="1007,315 1007,344 1146,344 1146,315" aria-label="Territorio 7J" />
+<polygon class="hotspot" data-key="7K" points="1003,265 1003,295 1147,295 1147,264" aria-label="Territorio 7K" />
+<polygon class="hotspot" data-key="7L" points="1003,215 1003,245 1150,245 1150,215" aria-label="Territorio 7L" />
+<polygon class="hotspot" data-key="8A" points="1173,161 1173,192 1397,192 1397,161" aria-label="Territorio 8A" />
+<polygon class="hotspot" data-key="8B" points="1175,213 1175,244 1363,244 1363,213" aria-label="Territorio 8B" />
+<polygon class="hotspot" data-key="8C" points="1173,266 1173,299 1364,299 1364,266" aria-label="Territorio 8C" />
+<polygon class="hotspot" data-key="8D" points="1175,315 1175,341 1366,341 1366,315" aria-label="Territorio 8D" />
+<polygon class="hotspot" data-key="8E" points="1173,361 1173,397 1364,397 1364,361" aria-label="Territorio 8E" />
+<polygon class="hotspot" data-key="8F" points="1172,410 1172,445 1364,445 1364,410" aria-label="Territorio 8F" />
 <polygon class="hotspot" data-key="8G" points="1242,461 1242,500 1368,500 1368,461" aria-label="Territorio 8G" />
+<polygon class="hotspot" data-key="9A" points="1476,509 1476,540 1608,540 1608,509" aria-label="Territorio 9A" />
+<polygon class="hotspot" data-key="9B" points="1501,462 1501,495 1601,495 1601,462" aria-label="Territorio 9B" />
+<polygon class="hotspot" data-key="9C" points="1421,460 1421,501 1477,501 1477,460" aria-label="Territorio 9C" />
+<polygon class="hotspot" data-key="9D" points="1424,411 1424,443 1603,443 1603,411" aria-label="Territorio 9D" />
+<polygon class="hotspot" data-key="9E" points="1421,359 1421,393 1600,393 1600,359" aria-label="Territorio 9E" />
+<polygon class="hotspot" data-key="9F" points="1424,309 1424,342 1608,342 1608,309" aria-label="Territorio 9F" />
+<polygon class="hotspot" data-key="9G" points="1421,264 1421,295 1603,295 1603,264" aria-label="Territorio 9G" />
+<polygon class="hotspot" data-key="9H" points="1425,214 1425,243 1601,243 1602,240 1601,213" aria-label="Territorio 9H" />
+<polygon class="hotspot" data-key="9I" points="1407,160 1407,195 1605,194 1605,160" aria-label="Territorio 9I" />
+<polygon class="hotspot" data-key="10A" points="1662,162 1662,189 1861,189 1861,162" aria-label="Territorio 10A" />
+<polygon class="hotspot" data-key="10B" points="1658,213 1658,247 1840,247 1840,213" aria-label="Territorio 10B" />
+<polygon class="hotspot" data-key="10C" points="1666,262 1666,295 1832,295 1832,262" aria-label="Territorio 10C" />
+<polygon class="hotspot" data-key="10D" points="1662,310 1662,345 1835,345 1835,310" aria-label="Territorio 10D" />
+<polygon class="hotspot" data-key="10E" points="1669,359 1669,393 1831,393 1831,359" aria-label="Territorio 10E" />
+<polygon class="hotspot" data-key="10F" points="1661,410 1661,444 1831,444 1831,410" aria-label="Territorio 10F" />
 <polygon class="hotspot" data-key="10G" points="1666,459 1666,491 1837,491 1837,459" aria-label="Territorio 10G" />
 <polygon class="hotspot" data-key="10H" points="1661,508 1661,540 1840,540 1840,508" aria-label="Territorio 10H" />
-<polygon class="hotspot" data-key="17A" points="976,542 976,574 1104,574 1104,542" aria-label="Territorio 17A" />
-<polygon class="hotspot" data-key="17B" points="1003,588 1004,620 1088,620 1088,588" aria-label="Territorio 17B" />
-<polygon class="hotspot" data-key="30D" points="64,649 65,682 158,682 158,649" aria-label="Territorio 30D" />
-<polygon class="hotspot" data-key="29D" points="184,649 184,682 257,682 257,649" aria-label="Territorio 29D" />
-<polygon class="hotspot" data-key="16F" points="1174,640 1174,675 1368,675 1368,640" aria-label="Territorio 16F" />
-<polygon class="hotspot" data-key="30C" points="43,698 43,735 160,735 161,724 163,721 160,698" aria-label="Territorio 30C" />
-<polygon class="hotspot" data-key="29C" points="179,698 179,733 281,733 281,697" aria-label="Territorio 29C" />
-<polygon class="hotspot" data-key="17D" points="986,697 986,726 1152,726 1152,697" aria-label="Territorio 17D" />
+<polygon class="hotspot" data-key="10I" points="1859,192 1859,553 1893,553 1893,192" aria-label="Territorio 10I" />
+<polygon class="hotspot" data-key="11A" points="1736,570 1712,720 1751,726 1775,576" aria-label="Territorio 11A" />
+<polygon class="hotspot" data-key="11B" points="1682,568 1662,696 1695,701 1696,686 1700,669 1714,573" aria-label="Territorio 11B" />
+<polygon class="hotspot" data-key="11C" points="1632,563 1617,675 1643,679 1659,567" aria-label="Territorio 11C" />
+<polygon class="hotspot" data-key="11D" points="1594,567 1574,566 1569,601 1553,651 1540,673 1529,699 1510,721 1486,754 1509,774 1533,749 1557,718 1569,700 1582,673 1587,655 1592,624 1593,602 1595,595" aria-label="Territorio 11D" />
+<polygon class="hotspot" data-key="11E" points="1547,564 1522,564 1519,601 1501,664 1482,698 1457,722 1457,725 1468,744 1470,744 1493,720 1520,675 1532,650 1543,609" aria-label="Territorio 11E" />
+<polygon class="hotspot" data-key="11F" points="1609,686 1524,790 1550,811 1635,708" aria-label="Territorio 11F" />
+<polygon class="hotspot" data-key="11G" points="1656,720 1563,824 1586,845 1679,741" aria-label="Territorio 11G" />
+<polygon class="hotspot" data-key="11H" points="1707,743 1609,853 1633,875 1732,765" aria-label="Territorio 11H" />
+<polygon class="hotspot" data-key="12A" points="1622,903 1619,904 1619,1122 1653,1122 1653,904" aria-label="Territorio 12A" />
+<polygon class="hotspot" data-key="12B" points="1673,884 1673,1121 1708,1121 1708,884" aria-label="Territorio 12B" />
+<polygon class="hotspot" data-key="12C" points="1721,871 1721,1119 1760,1119 1760,871" aria-label="Territorio 12C" />
+<polygon class="hotspot" data-key="12D" points="1781,966 1781,1114 1809,1114 1809,966" aria-label="Territorio 12D" />
+<polygon class="hotspot" data-key="12E" points="1825,567 1805,568 1798,570 1800,572 1802,589 1807,679 1807,761 1802,817 1793,874 1792,891 1788,909 1785,941 1805,944 1809,942 1826,877 1834,834 1838,790 1837,710 1831,636 1824,580" aria-label="Territorio 12E" />
+<polygon class="hotspot" data-key="12F" points="1865,574 1861,758 1856,813 1846,863 1825,927 1828,1110 1850,1110 1850,1108 1829,1107 1828,925 1852,849 1860,799 1865,710 1866,594 1868,576 1881,577 1884,579 1885,778 1882,820 1877,850 1868,878 1869,879 1846,936 1848,1105 1850,1104 1848,938 1875,868 1880,848 1885,814 1888,760 1888,632 1886,579 1890,578 1890,576" aria-label="Territorio 12F" />
+<polygon class="hotspot" data-key="13A" points="1826,1138 1826,1361 1855,1361 1855,1138" aria-label="Territorio 13A" />
+<polygon class="hotspot" data-key="13B" points="1780,1137 1780,1348 1814,1348 1814,1137" aria-label="Territorio 13B" />
+<polygon class="hotspot" data-key="13C" points="1739,1134 1739,1345 1769,1345 1769,1134" aria-label="Territorio 13C" />
+<polygon class="hotspot" data-key="13D" points="1694,1138 1694,1391 1726,1391 1726,1138" aria-label="Territorio 13D" />
+<polygon class="hotspot" data-key="13E" points="1650,1138 1649,1379 1650,1386 1678,1386 1678,1138" aria-label="Territorio 13E" />
+<polygon class="hotspot" data-key="13F" points="1605,1192 1605,1389 1637,1389 1638,1196 1637,1192" aria-label="Territorio 13F" />
+<polygon class="hotspot" data-key="14A" points="1532,1145 1532,1384 1561,1384 1561,1145" aria-label="Territorio 14A" />
+<polygon class="hotspot" data-key="14B" points="1482,1150 1482,1361 1513,1361 1513,1150" aria-label="Territorio 14B" />
+<polygon class="hotspot" data-key="14C" points="1435,1141 1435,1385 1466,1385 1466,1141" aria-label="Territorio 14C" />
+<polygon class="hotspot" data-key="14D" points="1390,1144 1390,1389 1421,1389 1421,1144" aria-label="Territorio 14D" />
+<polygon class="hotspot" data-key="14E" points="1343,1143 1343,1406 1371,1406 1371,1143" aria-label="Territorio 14E" />
+<polygon class="hotspot" data-key="14F" points="1295,1142 1295,1394 1323,1394 1323,1142" aria-label="Territorio 14F" />
+<polygon class="hotspot" data-key="14G" points="1250,1140 1250,1369 1278,1369 1278,1140" aria-label="Territorio 14G" />
+<polygon class="hotspot" data-key="14H" points="1210,1207 1210,1366 1234,1366 1234,1207" aria-label="Territorio 14H" />
+<polygon class="hotspot" data-key="14I" points="1169,1167 1169,1398 1192,1398 1192,1167" aria-label="Territorio 14I" />
+<polygon class="hotspot" data-key="15A" points="1176,928 1176,1123 1198,1123 1198,928" aria-label="Territorio 15A" />
+<polygon class="hotspot" data-key="15B" points="1213,970 1213,1125 1237,1125 1237,970" aria-label="Territorio 15B" />
+<polygon class="hotspot" data-key="15C" points="1259,966 1259,1116 1289,1116 1289,966" aria-label="Territorio 15C" />
+<polygon class="hotspot" data-key="15D" points="1313,969 1313,1118 1346,1118 1346,969" aria-label="Territorio 15D" />
+<polygon class="hotspot" data-key="15E" points="1371,931 1371,1118 1394,1118 1394,931" aria-label="Territorio 15E" />
+<polygon class="hotspot" data-key="15F" points="1427,954 1427,1116 1454,1116 1454,954" aria-label="Territorio 15F" />
+<polygon class="hotspot" data-key="15G" points="1486,1002 1486,1118 1513,1118 1513,1002" aria-label="Territorio 15G" />
+<polygon class="hotspot" data-key="15H" points="1525,953 1525,1117 1553,1117 1553,953" aria-label="Territorio 15H" />
+<polygon class="hotspot" data-key="16A" points="1175,897 1175,923 1372,923 1375,919 1373,918 1372,897" aria-label="Territorio 16A" />
+<polygon class="hotspot" data-key="16B" points="1372,856 1176,856 1176,885 1372,885" aria-label="Territorio 16B" />
+<polygon class="hotspot" data-key="16C" points="1392,801 1390,802 1390,800 1383,798 1355,805 1178,805 1178,836 1364,836 1365,822 1370,818 1371,819 1379,815 1383,816 1392,811" aria-label="Territorio 16C" />
+<polygon class="hotspot" data-key="16D" points="1353,690 1314,691 1315,748 1172,747 1170,749 1170,790 1173,790 1174,749 1315,751 1315,754 1317,755 1319,751 1322,751 1322,748 1318,747 1317,695 1339,692 1352,693 1352,767 1350,767 1352,769 1351,787 1178,787 1178,789 1358,789 1358,787 1354,786" aria-label="Territorio 16D" />
 <polygon class="hotspot" data-key="16E" points="1175,692 1175,727 1309,727 1309,692" aria-label="Territorio 16E" />
-<polygon class="hotspot" data-key="30B" points="41,746 41,782 159,782 159,746" aria-label="Territorio 30B" />
-<polygon class="hotspot" data-key="29B" points="184,748 184,781 296,781 296,748" aria-label="Territorio 29B" />
-<polygon class="hotspot" data-key="17E" points="982,756 982,787 1153,787 1153,756" aria-label="Territorio 17E" />
-<polygon class="hotspot" data-key="30A" points="40,797 40,830 165,830 165,797" aria-label="Territorio 30A" />
-<polygon class="hotspot" data-key="29A" points="175,800 175,831 315,831 315,800" aria-label="Territorio 29A" />
-<polygon class="hotspot" data-key="16C" points="1365,805 1178,805 1178,836 1364,836" aria-label="Territorio 16C" />
-<polygon class="hotspot" data-key="23A" points="413,845 413,880 579,880 579,845" aria-label="Territorio 23A" />
-<polygon class="hotspot" data-key="17G" points="1006,854 1006,892 1148,892 1148,854" aria-label="Territorio 17G" />
-<polygon class="hotspot" data-key="16B" points="1176,856 1176,885 1372,885 1372,856" aria-label="Territorio 16B" />
-<polygon class="hotspot" data-key="23B" points="401,895 401,926 556,926 556,895" aria-label="Territorio 23B" />
-<polygon class="hotspot" data-key="16A" points="1175,897 1175,923 1373,922 1372,897" aria-label="Territorio 16A" />
+<polygon class="hotspot" data-key="16F" points="1174,640 1174,675 1368,675 1368,640" aria-label="Territorio 16F" />
+<polygon class="hotspot" data-key="16G" points="1174,594 1174,626 1363,627 1363,594" aria-label="Territorio 16G" />
+<polygon class="hotspot" data-key="17A" points="976,542 976,574 1104,574 1104,542" aria-label="Territorio 17A" />
+<polygon class="hotspot" data-key="17B" points="1003,588 1004,620 1088,619 1088,588" aria-label="Territorio 17B" />
+<polygon class="hotspot" data-key="17C" points="956,641 956,675 1151,675 1151,641" aria-label="Territorio 17C" />
+<polygon class="hotspot" data-key="17D" points="986,697 986,726 1152,726 1152,697" aria-label="Territorio 17D" />
+<polygon class="hotspot" data-key="17E" points="982,756 982,787 1153,787 1152,756" aria-label="Territorio 17E" />
+<polygon class="hotspot" data-key="17F" points="1021,807 1021,836 1150,836 1150,807" aria-label="Territorio 17F" />
+<polygon class="hotspot" data-key="17G" points="1006,854 1006,891 1148,891 1148,854" aria-label="Territorio 17G" />
 <polygon class="hotspot" data-key="18A" points="992,914 992,944 1149,944 1149,914" aria-label="Territorio 18A" />
+<polygon class="hotspot" data-key="18B" points="951,850 951,1118 986,1118 986,850" aria-label="Territorio 18B" />
+<polygon class="hotspot" data-key="18C" points="1004,982 1004,1142 1030,1142 1031,983" aria-label="Territorio 18C" />
+<polygon class="hotspot" data-key="18D" points="1049,951 1049,1122 1073,1122 1073,951" aria-label="Territorio 18D" />
+<polygon class="hotspot" data-key="18E" points="1090,984 1090,1074 1116,1075 1116,984" aria-label="Territorio 18E" />
+<polygon class="hotspot" data-key="18F" points="1132,950 1132,1088 1154,1088 1155,950" aria-label="Territorio 18F" />
+<polygon class="hotspot" data-key="19A" points="1092,1144 1092,1200 1121,1200 1120,1144" aria-label="Territorio 19A" />
+<polygon class="hotspot" data-key="19B" points="1133,1179 1133,1430 1155,1430 1155,1179" aria-label="Territorio 19B" />
+<polygon class="hotspot" data-key="19C" points="1096,1222 1096,1384 1119,1384 1119,1223" aria-label="Territorio 19C" />
+<polygon class="hotspot" data-key="19D" points="1049,1146 1049,1430 1078,1430 1078,1146" aria-label="Territorio 19D" />
+<polygon class="hotspot" data-key="19E" points="1004,1160 1004,1382 1031,1382 1031,1161" aria-label="Territorio 19E" />
+<polygon class="hotspot" data-key="19F" points="957,1145 957,1431 983,1431 983,1145" aria-label="Territorio 19F" />
+<polygon class="hotspot" data-key="20A" points="887,1144 887,1396 914,1396 914,1144" aria-label="Territorio 20A" />
+<polygon class="hotspot" data-key="20B" points="817,1401 817,1433 915,1433 915,1401" aria-label="Territorio 20B" />
+<polygon class="hotspot" data-key="20C" points="840,1163 840,1358 873,1358 874,1165 873,1163" aria-label="Territorio 20C" />
+<polygon class="hotspot" data-key="20D" points="795,1144 795,1391 825,1391 825,1144" aria-label="Territorio 20D" />
+<polygon class="hotspot" data-key="20E" points="748,1142 748,1385 779,1385 779,1142" aria-label="Territorio 20E" />
+<polygon class="hotspot" data-key="20F" points="704,1143 704,1388 734,1388 734,1143" aria-label="Territorio 20F" />
+<polygon class="hotspot" data-key="20G" points="657,1146 657,1386 689,1386 689,1146" aria-label="Territorio 20G" />
+<polygon class="hotspot" data-key="20H" points="608,1180 608,1392 642,1392 642,1180" aria-label="Territorio 20H" />
+<polygon class="hotspot" data-key="20I" points="605,1402 605,1433 813,1433 813,1402" aria-label="Territorio 20I" />
+<polygon class="hotspot" data-key="21A" points="903,1000 816,1073 833,1093 919,1022" aria-label="Territorio 21A" />
+<polygon class="hotspot" data-key="21B" points="895,954 893,954 808,1024 825,1045 911,975 908,969" aria-label="Territorio 21B" />
+<polygon class="hotspot" data-key="21C" points="898,888 789,986 789,988 809,1009 812,1008 919,911" aria-label="Territorio 21C" />
+<polygon class="hotspot" data-key="21D" points="886,845 758,943 775,966 903,868" aria-label="Territorio 21D" />
+<polygon class="hotspot" data-key="21E" points="858,807 754,892 769,910 771,910 873,826" aria-label="Territorio 21E" />
+<polygon class="hotspot" data-key="21F" points="837,758 727,840 744,864 749,862 855,783" aria-label="Territorio 21F" />
+<polygon class="hotspot" data-key="22A" points="723,848 602,853 603,882 658,878 724,876" aria-label="Territorio 22A" />
+<polygon class="hotspot" data-key="22B" points="604,898 604,932 737,932 737,898" aria-label="Territorio 22B" />
+<polygon class="hotspot" data-key="22C" points="608,955 608,991 751,991 751,955" aria-label="Territorio 22C" />
+<polygon class="hotspot" data-key="22D" points="758,1007 608,1012 609,1043 624,1044 694,1040 759,1039" aria-label="Territorio 22D" />
+<polygon class="hotspot" data-key="22E" points="779,1042 763,1044 759,1046 673,1059 678,1093 785,1075" aria-label="Territorio 22E" />
+<polygon class="hotspot" data-key="23A" points="413,845 413,880 579,880 579,845" aria-label="Territorio 23A" />
+<polygon class="hotspot" data-key="23B" points="401,895 401,926 556,926 556,895" aria-label="Territorio 23B" />
 <polygon class="hotspot" data-key="23C" points="388,943 388,978 580,978 580,943" aria-label="Territorio 23C" />
 <polygon class="hotspot" data-key="23D" points="398,997 398,1029 559,1029 559,997" aria-label="Territorio 23D" />
-<polygon class="hotspot" data-key="23E" points="578,1046 390,1046 390,1078 578,1078" aria-label="Territorio 23E" />
-<polygon class="hotspot" data-key="26F" points="50,1144 50,1180 156,1180 156,1144" aria-label="Territorio 26F" />
+<polygon class="hotspot" data-key="23E" points="390,1046 390,1078 577,1078 578,1076 577,1046" aria-label="Territorio 23E" />
+<polygon class="hotspot" data-key="23F" points="386,1096 386,1120 553,1120 553,1096" aria-label="Territorio 23F" />
+<polygon class="hotspot" data-key="24A" points="551,1197 551,1357 579,1357 579,1197" aria-label="Territorio 24A" />
+<polygon class="hotspot" data-key="24B" points="501,1140 501,1354 528,1354 528,1140" aria-label="Territorio 24B" />
+<polygon class="hotspot" data-key="24C" points="451,1142 451,1353 479,1353 479,1143" aria-label="Territorio 24C" />
+<polygon class="hotspot" data-key="24D" points="403,1141 403,1358 429,1358 429,1141" aria-label="Territorio 24D" />
 <polygon class="hotspot" data-key="25A" points="187,1143 187,1186 347,1186 347,1142" aria-label="Territorio 25A" />
-<polygon class="hotspot" data-key="26E" points="33,1196 33,1233 165,1233 165,1196" aria-label="Territorio 26E" />
-<polygon class="hotspot" data-key="25B" points="337,1200 207,1200 207,1235 337,1235" aria-label="Territorio 25B" />
-<polygon class="hotspot" data-key="26D" points="38,1251 38,1288 209,1288 209,1250" aria-label="Territorio 26D" />
-<polygon class="hotspot" data-key="25C" points="253,1256 253,1296 384,1296 384,1256" aria-label="Territorio 25C" />
-<polygon class="hotspot" data-key="26C" points="36,1305 37,1338 216,1338 216,1300 37,1300" aria-label="Territorio 26C" />
+<polygon class="hotspot" data-key="25B" points="207,1200 207,1235 337,1235 337,1200" aria-label="Territorio 25B" />
+<polygon class="hotspot" data-key="25C" points="253,1256 253,1295 384,1296 384,1256" aria-label="Territorio 25C" />
 <polygon class="hotspot" data-key="26A" points="39,1398 39,1426 236,1426 236,1398" aria-label="Territorio 26A" />
-<polygon class="hotspot" data-key="20B" points="817,1401 817,1433 915,1433 915,1401" aria-label="Territorio 20B" />
-
-<rect class="hotspot" data-key="1A" x="128.3" y="132.5" width="72.0" height="33.0" aria-label="Territorio 1A" />
-<rect class="hotspot" data-key="1B" x="128.1" y="169.3" width="72.0" height="33.0" aria-label="Territorio 1B" />
-<rect class="hotspot" data-key="1C" x="173.5" y="183.6" width="72.0" height="33.0" aria-label="Territorio 1C" />
-<rect class="hotspot" data-key="1D" x="168.7" y="194.5" width="72.0" height="33.0" aria-label="Territorio 1D" />
-<rect class="hotspot" data-key="2A" x="348.4" y="313.8" width="72.0" height="33.0" aria-label="Territorio 2A" />
-<rect class="hotspot" data-key="2B" x="393.1" y="114.8" width="72.0" height="33.0" aria-label="Territorio 2B" />
-<rect class="hotspot" data-key="2D" x="405.3" y="262.4" width="72.0" height="33.0" aria-label="Territorio 2D" />
-<rect class="hotspot" data-key="2E" x="439.6" y="303.5" width="72.0" height="33.0" aria-label="Territorio 2E" />
-<rect class="hotspot" data-key="2F" x="473.3" y="342.6" width="72.0" height="33.0" aria-label="Territorio 2F" />
-<rect class="hotspot" data-key="2G" x="529.9" y="406.2" width="72.0" height="33.0" aria-label="Territorio 2G" />
-<rect class="hotspot" data-key="3A" x="322.9" y="455.8" width="72.0" height="33.0" aria-label="Territorio 3A" />
-<rect class="hotspot" data-key="3B" x="343.1" y="505.9" width="72.0" height="33.0" aria-label="Territorio 3B" />
-<rect class="hotspot" data-key="3C" x="375.4" y="541.3" width="72.0" height="33.0" aria-label="Territorio 3C" />
-<rect class="hotspot" data-key="4A" x="508.2" y="546.9" width="72.0" height="33.0" aria-label="Territorio 4A" />
-<rect class="hotspot" data-key="4B" x="496.5" y="545.0" width="72.0" height="33.0" aria-label="Territorio 4B" />
-<rect class="hotspot" data-key="4C" x="496.5" y="545.0" width="72.0" height="33.0" aria-label="Territorio 4C" />
-<rect class="hotspot" data-key="4D" x="431.2" y="629.8" width="72.0" height="33.0" aria-label="Territorio 4D" />
-<rect class="hotspot" data-key="4E" x="500.1" y="677.3" width="72.0" height="33.0" aria-label="Territorio 4E" />
-<rect class="hotspot" data-key="4F" x="394.4" y="665.6" width="72.0" height="33.0" aria-label="Territorio 4F" />
-<rect class="hotspot" data-key="4G" x="486.1" y="728.9" width="72.0" height="33.0" aria-label="Territorio 4G" />
-<rect class="hotspot" data-key="4H" x="360.9" y="706.2" width="72.0" height="33.0" aria-label="Territorio 4H" />
-<rect class="hotspot" data-key="4I" x="475.5" y="780.8" width="72.0" height="33.0" aria-label="Territorio 4I" />
-<rect class="hotspot" data-key="5A" x="656.9" y="777.1" width="72.0" height="33.0" aria-label="Territorio 5A" />
-<rect class="hotspot" data-key="5B" x="649.3" y="726.7" width="72.0" height="33.0" aria-label="Territorio 5B" />
-<rect class="hotspot" data-key="5C" x="637.2" y="676.0" width="72.0" height="33.0" aria-label="Territorio 5C" />
-<rect class="hotspot" data-key="5D" x="624.8" y="623.9" width="72.0" height="33.0" aria-label="Territorio 5D" />
-<rect class="hotspot" data-key="5E" x="598.1" y="576.9" width="72.0" height="33.0" aria-label="Territorio 5E" />
-<rect class="hotspot" data-key="5F" x="614.7" y="559.6" width="72.0" height="33.0" aria-label="Territorio 5F" />
-<rect class="hotspot" data-key="6A" x="661.9" y="444.5" width="72.0" height="33.0" aria-label="Territorio 6A" />
-<rect class="hotspot" data-key="6B" x="665.6" y="394.1" width="72.0" height="33.0" aria-label="Territorio 6B" />
-<rect class="hotspot" data-key="6G" x="694.7" y="115.6" width="72.0" height="33.0" aria-label="Territorio 6G" />
-<rect class="hotspot" data-key="7G" x="962.9" y="445.9" width="72.0" height="33.0" aria-label="Territorio 7G" />
-<rect class="hotspot" data-key="7I" x="1045.8" y="337.5" width="72.0" height="33.0" aria-label="Territorio 7I" />
-<rect class="hotspot" data-key="9A" x="1503.7" y="488.2" width="72.0" height="33.0" aria-label="Territorio 9A" />
-<rect class="hotspot" data-key="9B" x="1501.7" y="437.1" width="72.0" height="33.0" aria-label="Territorio 9B" />
-<rect class="hotspot" data-key="9C" x="1416.9" y="440.8" width="72.0" height="33.0" aria-label="Territorio 9C" />
-<rect class="hotspot" data-key="9D" x="1484.2" y="383.4" width="72.0" height="33.0" aria-label="Territorio 9D" />
-<rect class="hotspot" data-key="9E" x="1486.5" y="329.8" width="72.0" height="33.0" aria-label="Territorio 9E" />
-<rect class="hotspot" data-key="9F" x="1484.8" y="275.8" width="72.0" height="33.0" aria-label="Territorio 9F" />
-<rect class="hotspot" data-key="9G" x="1488.2" y="226.1" width="72.0" height="33.0" aria-label="Territorio 9G" />
-<rect class="hotspot" data-key="9I" x="1464.9" y="165.3" width="72.0" height="33.0" aria-label="Territorio 9I" />
-<rect class="hotspot" data-key="10I" x="1792.0" y="319.7" width="72.0" height="33.0" aria-label="Territorio 10I" />
-<rect class="hotspot" data-key="11A" x="1717.8" y="626.9" width="72.0" height="33.0" aria-label="Territorio 11A" />
-<rect class="hotspot" data-key="11B" x="1669.8" y="631.3" width="72.0" height="33.0" aria-label="Territorio 11B" />
-<rect class="hotspot" data-key="11C" x="1626.6" y="615.5" width="72.0" height="33.0" aria-label="Territorio 11C" />
-<rect class="hotspot" data-key="11D" x="1555.6" y="676.7" width="72.0" height="33.0" aria-label="Territorio 11D" />
-<rect class="hotspot" data-key="11E" x="1512.0" y="654.4" width="72.0" height="33.0" aria-label="Territorio 11E" />
-<rect class="hotspot" data-key="11F" x="1552.1" y="761.2" width="72.0" height="33.0" aria-label="Territorio 11F" />
-<rect class="hotspot" data-key="11G" x="1580.5" y="804.9" width="72.0" height="33.0" aria-label="Territorio 11G" />
-<rect class="hotspot" data-key="11H" x="1615.5" y="835.0" width="72.0" height="33.0" aria-label="Territorio 11H" />
-<rect class="hotspot" data-key="12A" x="1558.9" y="1003.5" width="72.0" height="33.0" aria-label="Territorio 12A" />
-<rect class="hotspot" data-key="12B" x="1606.6" y="1001.7" width="72.0" height="33.0" aria-label="Territorio 12B" />
-<rect class="hotspot" data-key="12C" x="1654.5" y="1003.0" width="72.0" height="33.0" aria-label="Territorio 12C" />
-<rect class="hotspot" data-key="12D" x="1702.1" y="1002.6" width="72.0" height="33.0" aria-label="Territorio 12D" />
-<rect class="hotspot" data-key="12E" x="1728.3" y="729.4" width="72.0" height="33.0" aria-label="Territorio 12E" />
-<rect class="hotspot" data-key="12F" x="1765.9" y="830.1" width="72.0" height="33.0" aria-label="Territorio 12F" />
-<rect class="hotspot" data-key="13A" x="1744.7" y="1238.4" width="72.0" height="33.0" aria-label="Territorio 13A" />
-<rect class="hotspot" data-key="13B" x="1704.2" y="1231.7" width="72.0" height="33.0" aria-label="Territorio 13B" />
-<rect class="hotspot" data-key="13C" x="1662.1" y="1236.1" width="72.0" height="33.0" aria-label="Territorio 13C" />
-<rect class="hotspot" data-key="13D" x="1619.5" y="1250.0" width="72.0" height="33.0" aria-label="Territorio 13D" />
-<rect class="hotspot" data-key="13E" x="1577.8" y="1240.7" width="72.0" height="33.0" aria-label="Territorio 13E" />
-<rect class="hotspot" data-key="13F" x="1533.4" y="1263.5" width="72.0" height="33.0" aria-label="Territorio 13F" />
-<rect class="hotspot" data-key="14A" x="1485.6" y="1223.8" width="72.0" height="33.0" aria-label="Territorio 14A" />
-<rect class="hotspot" data-key="14B" x="1440.7" y="1226.6" width="72.0" height="33.0" aria-label="Territorio 14B" />
-<rect class="hotspot" data-key="14C" x="1399.1" y="1225.8" width="72.0" height="33.0" aria-label="Territorio 14C" />
-<rect class="hotspot" data-key="14D" x="1354.8" y="1231.4" width="72.0" height="33.0" aria-label="Territorio 14D" />
-<rect class="hotspot" data-key="14E" x="1315.9" y="1236.6" width="72.0" height="33.0" aria-label="Territorio 14E" />
-<rect class="hotspot" data-key="14F" x="1278.6" y="1239.3" width="72.0" height="33.0" aria-label="Territorio 14F" />
-<rect class="hotspot" data-key="14G" x="1238.4" y="1251.7" width="72.0" height="33.0" aria-label="Territorio 14G" />
-<rect class="hotspot" data-key="14H" x="1196.1" y="1253.8" width="72.0" height="33.0" aria-label="Territorio 14H" />
-<rect class="hotspot" data-key="14I" x="1152.1" y="1264.5" width="72.0" height="33.0" aria-label="Territorio 14I" />
-<rect class="hotspot" data-key="15A" x="1159.7" y="1028.3" width="72.0" height="33.0" aria-label="Territorio 15A" />
-<rect class="hotspot" data-key="15B" x="1207.4" y="1025.8" width="72.0" height="33.0" aria-label="Territorio 15B" />
-<rect class="hotspot" data-key="15C" x="1216.9" y="978.5" width="72.0" height="33.0" aria-label="Territorio 15C" />
-<rect class="hotspot" data-key="15D" x="1309.3" y="1024.6" width="72.0" height="33.0" aria-label="Territorio 15D" />
-<rect class="hotspot" data-key="15E" x="1355.1" y="1022.7" width="72.0" height="33.0" aria-label="Territorio 15E" />
-<rect class="hotspot" data-key="15F" x="1399.6" y="1030.4" width="72.0" height="33.0" aria-label="Territorio 15F" />
-<rect class="hotspot" data-key="15G" x="1430.1" y="1001.9" width="72.0" height="33.0" aria-label="Territorio 15G" />
-<rect class="hotspot" data-key="15H" x="1454.4" y="1022.3" width="72.0" height="33.0" aria-label="Territorio 15H" />
-<rect class="hotspot" data-key="16D" x="1244.5" y="741.5" width="72.0" height="33.0" aria-label="Territorio 16D" />
-<rect class="hotspot" data-key="16G" x="1254.1" y="624.7" width="72.0" height="33.0" aria-label="Territorio 16G" />
-<rect class="hotspot" data-key="17C" x="1005.7" y="685.1" width="72.0" height="33.0" aria-label="Territorio 17C" />
-<rect class="hotspot" data-key="17F" x="1010.6" y="819.5" width="72.0" height="33.0" aria-label="Territorio 17F" />
-<rect class="hotspot" data-key="18B" x="932.8" y="1006.5" width="72.0" height="33.0" aria-label="Territorio 18B" />
-<rect class="hotspot" data-key="18C" x="974.0" y="1020.7" width="72.0" height="33.0" aria-label="Territorio 18C" />
-<rect class="hotspot" data-key="18D" x="1012.8" y="1022.7" width="72.0" height="33.0" aria-label="Territorio 18D" />
-<rect class="hotspot" data-key="18E" x="1056.1" y="1030.4" width="72.0" height="33.0" aria-label="Territorio 18E" />
-<rect class="hotspot" data-key="18F" x="1098.2" y="1016.5" width="72.0" height="33.0" aria-label="Territorio 18F" />
-<rect class="hotspot" data-key="19A" x="1057.8" y="1159.2" width="72.0" height="33.0" aria-label="Territorio 19A" />
-<rect class="hotspot" data-key="19B" x="1093.2" y="1235.6" width="72.0" height="33.0" aria-label="Territorio 19B" />
-<rect class="hotspot" data-key="19C" x="1052.4" y="1254.9" width="72.0" height="33.0" aria-label="Territorio 19C" />
-<rect class="hotspot" data-key="19D" x="1010.5" y="1268.4" width="72.0" height="33.0" aria-label="Territorio 19D" />
-<rect class="hotspot" data-key="19E" x="968.8" y="1264.7" width="72.0" height="33.0" aria-label="Territorio 19E" />
-<rect class="hotspot" data-key="19F" x="924.9" y="1258.1" width="72.0" height="33.0" aria-label="Territorio 19F" />
-<rect class="hotspot" data-key="20A" x="872.5" y="1252.5" width="72.0" height="33.0" aria-label="Territorio 20A" />
-<rect class="hotspot" data-key="20C" x="832.3" y="1240.7" width="72.0" height="33.0" aria-label="Territorio 20C" />
-<rect class="hotspot" data-key="20D" x="788.7" y="1246.7" width="72.0" height="33.0" aria-label="Territorio 20D" />
-<rect class="hotspot" data-key="20E" x="745.0" y="1248.2" width="72.0" height="33.0" aria-label="Territorio 20E" />
-<rect class="hotspot" data-key="20F" x="694.5" y="1251.4" width="72.0" height="33.0" aria-label="Territorio 20F" />
-<rect class="hotspot" data-key="20G" x="647.0" y="1255.3" width="72.0" height="33.0" aria-label="Territorio 20G" />
-<rect class="hotspot" data-key="20H" x="599.3" y="1262.8" width="72.0" height="33.0" aria-label="Territorio 20H" />
-<rect class="hotspot" data-key="20I" x="656.0" y="1368.2" width="72.0" height="33.0" aria-label="Territorio 20I" />
-<rect class="hotspot" data-key="21A" x="828.3" y="1087.7" width="72.0" height="33.0" aria-label="Territorio 21A" />
-<rect class="hotspot" data-key="21B" x="821.0" y="1037.8" width="72.0" height="33.0" aria-label="Territorio 21B" />
-<rect class="hotspot" data-key="21C" x="813.0" y="979.9" width="72.0" height="33.0" aria-label="Territorio 21C" />
-<rect class="hotspot" data-key="21D" x="797.7" y="933.2" width="72.0" height="33.0" aria-label="Territorio 21D" />
-<rect class="hotspot" data-key="21E" x="773.9" y="887.8" width="72.0" height="33.0" aria-label="Territorio 21E" />
-<rect class="hotspot" data-key="21F" x="755.2" y="838.1" width="72.0" height="33.0" aria-label="Territorio 21F" />
-<rect class="hotspot" data-key="22A" x="623.3" y="884.0" width="72.0" height="33.0" aria-label="Territorio 22A" />
-<rect class="hotspot" data-key="22B" x="623.8" y="941.5" width="72.0" height="33.0" aria-label="Territorio 22B" />
-<rect class="hotspot" data-key="22C" x="634.4" y="990.9" width="72.0" height="33.0" aria-label="Territorio 22C" />
-<rect class="hotspot" data-key="22D" x="637.6" y="1042.0" width="72.0" height="33.0" aria-label="Territorio 22D" />
-<rect class="hotspot" data-key="22E" x="670.0" y="1092.5" width="72.0" height="33.0" aria-label="Territorio 22E" />
-<rect class="hotspot" data-key="23F" x="444.0" y="1100.9" width="72.0" height="33.0" aria-label="Territorio 23F" />
-<rect class="hotspot" data-key="24A" x="495.3" y="1234.9" width="72.0" height="33.0" aria-label="Territorio 24A" />
-<rect class="hotspot" data-key="24B" x="444.4" y="1239.7" width="72.0" height="33.0" aria-label="Territorio 24B" />
-<rect class="hotspot" data-key="24C" x="398.4" y="1241.9" width="72.0" height="33.0" aria-label="Territorio 24C" />
-<rect class="hotspot" data-key="24D" x="350.1" y="1250.5" width="72.0" height="33.0" aria-label="Territorio 24D" />
-<rect class="hotspot" data-key="26B" x="99.1" y="1338.7" width="72.0" height="33.0" aria-label="Territorio 26B" />
-<rect class="hotspot" data-key="27A" x="47.0" y="1105.2" width="72.0" height="33.0" aria-label="Territorio 27A" />
-<rect class="hotspot" data-key="27B" x="51.8" y="1052.4" width="72.0" height="33.0" aria-label="Territorio 27B" />
-<rect class="hotspot" data-key="27C" x="50.1" y="1004.7" width="72.0" height="33.0" aria-label="Territorio 27C" />
-<rect class="hotspot" data-key="27D" x="46.9" y="953.1" width="72.0" height="33.0" aria-label="Territorio 27D" />
-<rect class="hotspot" data-key="27E" x="54.1" y="900.2" width="72.0" height="33.0" aria-label="Territorio 27E" />
-<rect class="hotspot" data-key="27F" x="58.2" y="850.4" width="72.0" height="33.0" aria-label="Territorio 27F" />
-<rect class="hotspot" data-key="28A" x="211.1" y="1106.7" width="72.0" height="33.0" aria-label="Territorio 28A" />
-<rect class="hotspot" data-key="28B" x="224.8" y="1053.3" width="72.0" height="33.0" aria-label="Territorio 28B" />
-<rect class="hotspot" data-key="28C" x="223.6" y="1002.1" width="72.0" height="33.0" aria-label="Territorio 28C" />
-<rect class="hotspot" data-key="28D" x="224.3" y="950.2" width="72.0" height="33.0" aria-label="Territorio 28D" />
-<rect class="hotspot" data-key="28E" x="218.4" y="893.1" width="72.0" height="33.0" aria-label="Territorio 28E" />
-<rect class="hotspot" data-key="28F" x="214.5" y="847.1" width="72.0" height="33.0" aria-label="Territorio 28F" />
-<rect class="hotspot" data-key="31A" x="101.3" y="581.3" width="72.0" height="33.0" aria-label="Territorio 31A" />
-<rect class="hotspot" data-key="31B" x="104.1" y="527.7" width="72.0" height="33.0" aria-label="Territorio 31B" />
-<rect class="hotspot" data-key="31C" x="114.4" y="472.3" width="72.0" height="33.0" aria-label="Territorio 31C" />
-</svg></div></div><p class="hint" id="mapHint">201 zonas táctiles. Activa el botón y toca un territorio para abrir su ubicación en Google Maps.</p></section>
+<polygon class="hotspot" data-key="26B" points="35,1353 35,1387 218,1387 218,1353" aria-label="Territorio 26B" />
+<polygon class="hotspot" data-key="26C" points="37,1300 37,1338 216,1338 216,1300" aria-label="Territorio 26C" />
+<polygon class="hotspot" data-key="26D" points="38,1251 38,1288 209,1288 209,1250" aria-label="Territorio 26D" />
+<polygon class="hotspot" data-key="26E" points="33,1196 33,1233 165,1233 165,1196" aria-label="Territorio 26E" />
+<polygon class="hotspot" data-key="26F" points="50,1144 50,1180 155,1180 156,1178 156,1144" aria-label="Territorio 26F" />
+<polygon class="hotspot" data-key="27A" points="38,1096 38,1122 159,1122 159,1095" aria-label="Territorio 27A" />
+<polygon class="hotspot" data-key="27B" points="38,1049 38,1084 159,1084 158,1049" aria-label="Territorio 27B" />
+<polygon class="hotspot" data-key="27C" points="37,994 37,1033 160,1033 160,994" aria-label="Territorio 27C" />
+<polygon class="hotspot" data-key="27D" points="37,943 37,980 159,979 158,943" aria-label="Territorio 27D" />
+<polygon class="hotspot" data-key="27E" points="38,896 38,929 159,929 158,895" aria-label="Territorio 27E" />
+<polygon class="hotspot" data-key="27F" points="36,845 36,882 159,882 159,845" aria-label="Territorio 27F" />
+<polygon class="hotspot" data-key="28A" points="177,1099 177,1124 327,1124 327,1098" aria-label="Territorio 28A" />
+<polygon class="hotspot" data-key="28B" points="183,1050 183,1081 325,1081 325,1050" aria-label="Territorio 28B" />
+<polygon class="hotspot" data-key="28C" points="176,995 176,1030 322,1030 322,995" aria-label="Territorio 28C" />
+<polygon class="hotspot" data-key="28D" points="179,948 179,981 323,981 323,948" aria-label="Territorio 28D" />
+<polygon class="hotspot" data-key="28E" points="178,895 178,931 322,931 322,895" aria-label="Territorio 28E" />
+<polygon class="hotspot" data-key="28F" points="181,846 181,882 321,881 321,846" aria-label="Territorio 28F" />
+<polygon class="hotspot" data-key="29A" points="175,800 175,831 315,831 315,800" aria-label="Territorio 29A" />
+<polygon class="hotspot" data-key="29B" points="184,748 184,781 296,781 296,748" aria-label="Territorio 29B" />
+<polygon class="hotspot" data-key="29C" points="179,698 179,733 281,733 281,698" aria-label="Territorio 29C" />
+<polygon class="hotspot" data-key="29D" points="184,649 184,682 257,682 257,649" aria-label="Territorio 29D" />
+<polygon class="hotspot" data-key="30A" points="40,797 40,830 165,830 165,797" aria-label="Territorio 30A" />
+<polygon class="hotspot" data-key="30B" points="41,746 41,782 159,782 159,746" aria-label="Territorio 30B" />
+<polygon class="hotspot" data-key="30C" points="43,698 43,735 160,735 162,721 160,698" aria-label="Territorio 30C" />
+<polygon class="hotspot" data-key="30D" points="64,649 65,682 158,682 158,649" aria-label="Territorio 30D" />
+<polygon class="hotspot" data-key="31A" points="43,577 43,607 237,607 237,577" aria-label="Territorio 31A" />
+<polygon class="hotspot" data-key="31B" points="43,523 43,556 236,555 235,522" aria-label="Territorio 31B" />
+<polygon class="hotspot" data-key="31C" points="40,466 40,497 218,497 218,466" aria-label="Territorio 31C" />
+<polygon class="hotspot" data-key="32A" points="203,326 200,328 174,328 173,419 46,419 44,449 202,450" aria-label="Territorio 32A" />
+<polygon class="hotspot" data-key="32B" points="45,370 45,400 154,400 154,370" aria-label="Territorio 32B" />
+<polygon class="hotspot" data-key="32C" points="45,323 45,352 153,352 153,323" aria-label="Territorio 32C" />
+<polygon class="hotspot hotspot-2a" data-key="2A" points="362,149 377,149 378,150 378,337 377,338 362,338 361,337 361,150" aria-label="Territorio 2A" />
+</svg></div></div><p class="hint" id="mapHint">201 zonas táctiles trazadas sobre el plano guía. Activa el botón y toca un territorio para abrir su ubicación en Google Maps.</p></section>
 <section class="panel"><b id="detailTitle">Selecciona un territorio</b><p class="hint" id="detailHint">Toca una de las zonas habilitadas del plano o abre el menú ☰ para buscarlo.</p><div id="detailActions"></div></section>
 <section class="panel"><b>Respaldo de notas</b><p class="hint">Exporta tus notas para conservarlas o pasarlas a otro teléfono.</p><div class="row"><button id="export">Exportar respaldo</button><label class="btn secondary">Importar respaldo<input id="import" type="file" accept="application/json" hidden></label></div><div class="status" id="status"></div></section>
 </main>
@@ -256,7 +255,7 @@ wrap.addEventListener('pointermove',e=>{
 function endPointer(e){activePointers.delete(e.pointerId);if(activePointers.size<2)pinchStart=null;if(activePointers.size===0)dragStart=null}
 wrap.addEventListener('pointerup',endPointer);wrap.addEventListener('pointercancel',endPointer);wrap.addEventListener('lostpointercapture',endPointer);
 wrap.addEventListener('wheel',e=>{if(e.ctrlKey||e.deltaY){e.preventDefault();const r=wrap.getBoundingClientRect();setZoom(zoomLevel+(e.deltaY<0?0.12:-0.12),e.clientX-r.left,e.clientY-r.top)}},{passive:false});
-touchBtn.onclick=()=>{const on=stage.classList.toggle('touch-on');touchBtn.classList.toggle('active',on);touchBtn.textContent=on?'✓ Zonas táctiles activas':'◎ Activar zonas táctiles';$('mapHint').textContent=on?'Toca una zona calibrada del plano para abrir Google Maps.':'Activa «Zonas táctiles» para probar las zonas calibradas. Usa + y − para ampliar.'};
+touchBtn.onclick=()=>{const on=stage.classList.toggle('touch-on');touchBtn.classList.toggle('active',on);touchBtn.textContent=on?'✓ Zonas táctiles activas':'◎ Activar zonas táctiles';$('mapHint').textContent=on?'Toca cualquiera de los 201 territorios para abrir su ubicación en Google Maps.':'Activa «Zonas táctiles» para probar las zonas calibradas. Usa + y − para ampliar.'};
 $('fullMap').onclick=async()=>{try{if(!document.fullscreenElement)await wrap.requestFullscreen();else await document.exitFullscreen()}catch(e){$('mapHint').textContent='La pantalla completa no está disponible en este navegador.'}};
 setZoom(1);
 render();
